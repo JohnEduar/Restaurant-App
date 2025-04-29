@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <div class="logo">
+                <h1>Restaurantes<span>Colombia</span></h1>
+            </div>
+            <button id="menu-toggle"></button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="#Búsqueda">Búsqueda</a></li>
+                <li><a href="Nuevo.html">Nuevo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <div class="form-section">
+            <h2>Agregar un nuevo Restaurante</h2>
+            <form id="add-restaurant-form">
+                <div class="mb-3">
+                    <label for="restaurant-name" class="form-label">Nombre del Restaurante</label>
+                    <input type="text" class="form-control" id="restaurant-name" placeholder="Ingresa el nombre del restaurante" required>
+                </div>
+                <div class="mb-3">
+                    <label for="restaurant-description" class="form-label">Descripción</label>
+                    <textarea class="form-control" id="restaurant-description" rows="3" placeholder="Descripción breve del restaurante" required></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="restaurant-address" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="restaurant-address" placeholder="Ingresa la dirección" required>
+                </div>
+                <div class="mb-3">
+                    <label for="restaurant-image" class="form-label">Imagen</label>
+                    <input type="file" class="form-control" id="restaurant-image" required>
+                </div>
+                <button type="submit" class="form-btn">Agregar Restaurante</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
