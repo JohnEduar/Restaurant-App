@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurantes Colombia</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
+
 <body>
-    <p>John Eduar - Juan Esteban - Juan Camilo</p>
-    <h1>Restaurant App</h1>
     <header id="main-header">
         <nav id="main-nav">
             <div class="logo">
-                <h1>Restaurantes<span>Colombia</span></h1>
+                <h1>RESTAURANTES COLOMBIA</h1>
             </div>  
-            <button id="menu-toggle"></button>
+            <button id="menu-toggle" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
             <ul class="nav-links">
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="search.html">Búsqueda</a></li>
-                <li><a href="Nuevo.html">Nuevo</a></li>
+                <li><a href="index.html" class="active">INICIO</a></li>
+                <li><a href="search.html">BUSCAR</a></li>
+                <li><a href="Nuevo.html">NUEVO</a></li>
             </ul>
         </nav>
     </header>
@@ -28,8 +32,8 @@
                 <h2 class="animate-title">Descubre los mejores restaurantes en Colombia</h2>
                 <p class="animate-subtitle">Explora una variedad de opciones gastronómicas en todo el país.</p>
                 <div class="hero-buttons">
-                    <button class="btn primary-btn" aria-label="Ver Restaurantes">Ver Restaurantes</button>
-                    <button class="btn secondary-btn" aria-label="Saber Más">Saber Más</button>
+                    <a href="#restaurantes" class="btn primary-btn" aria-label="Ver Restaurantes">Ver Restaurantes</a>
+                    <a href="#saber-mas" class="btn secondary-btn" aria-label="Saber Más">Saber Más</a>
                 </div>
                 <div class="hero-image">
                     <div class="shape shape-1"></div>
@@ -38,7 +42,7 @@
                 </div>
         </section>
                 
-        <section class="restaurantes">
+        <section id="restaurantes" class="restaurantes">
             <article class="card">
                 <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300" alt="Restaurante 1">
                 <div class="info">
@@ -80,6 +84,18 @@
             </article>
         </section>
     </main>
+
+    <section id="saber-mas" class="descripcion-pagina">
+        <div class="contenido-descripcion">
+          <h2>¿Por qué Restaurantes Colombia?</h2>
+          <p>
+            Restaurantes Colombia es una plataforma diseñada para ayudarte a descubrir los mejores lugares para comer en todo el país. Ya sea que estés buscando cocina típica, sabores internacionales o una experiencia gastronómica única, aquí encontrarás una selección curada de restaurantes en diferentes ciudades. Nuestro objetivo es conectarte con espacios que combinan excelente comida, buen ambiente y servicio de calidad.
+          </p>
+          <p>
+            Explora fácilmente por ciudad, tipo de comida o ambiente, y mantente actualizado con nuestras recomendaciones y nuevos descubrimientos. Porque comer bien es parte de vivir bien.
+          </p>
+        </div>
+      </section>
 
         <footer id="main-footer">
             <div class="footer-content">
